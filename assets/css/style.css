@@ -1,0 +1,18 @@
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+.jumbotron,
+.btn-primary {
+  background: mediumvioletred;
+  color: white;
+}
+
+.card-header {
+  background: dimgray;
+  color: white;
+}
+
+.btn-primary {
+  border: white;
+}

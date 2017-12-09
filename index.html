@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
@@ -22,7 +23,7 @@
     <div class="container">
         <div class="card mb-5">
             <div class="card-header">
-                Search Parameters
+                <i class="fa fa-list-alt"></i>&nbsp;Search Parameters
             </div>
             <div class="card-body">
                 <form>
@@ -46,15 +47,17 @@
                         <label for="endYear">End Year (Optional):</label>
                         <input type="text" class="form-control" id="endYear">
                     </div>
-                    <button id="searchBtn" type="submit" class="btn btn-primary">Search</button>
-                    <button id="clearBtn" class="btn btn-primary">Clear Results</button>
+                    <button id="searchBtn" type="submit" class="btn btn-primary">
+                        <i class="fa fa-search"></i>&nbsp;Search</button>
+                    <button id="clearBtn" class="btn btn-primary">
+                        <i class="fa fa-trash"></i>&nbsp;Clear Results</button>
 
                 </form>
             </div>
         </div>
         <div class="card">
             <div class="card-header">
-                Top Articles
+                <i class="fa fa-table"></i>&nbsp;Top Articles
             </div>
             <div class="card-body" id="queryResults">
 
