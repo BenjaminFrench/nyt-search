@@ -1,5 +1,5 @@
 // var searchTerm = "test";
-
+var total = 0;
 $('#searchBtn').on('click', function (event) {
     event.preventDefault();
     var searchTerm = $('#searchTerm').val();
@@ -31,10 +31,11 @@ $('#searchBtn').on('click', function (event) {
         console.log(response);
 
         for (let index = 0; index < numResults; index++) {
+            total++;
             $('#queryResults').append(`
             <div class="card">
                 <div class="body">
-                    <h3 class="headline"><a href="${response.docs[index].web_url}">${index+1}. ${response.docs[index].headline.main}</a></h3>
+                    <h3 class="headline"><a href="${response.docs[index].web_url}">${total}. ${response.docs[index].headline.main}</a></h3>
                     <h5 class="author">${response.docs[index].byline.original}</h5>
                 </div>
             </div>
@@ -50,4 +51,10 @@ $('#searchBtn').on('click', function (event) {
     
 })
 
+$('#clearBtn').on('click', function (event) {
+    event.preventDefault();
+    $('#queryResults').empty();
+    total =0;
+    
+})
 
