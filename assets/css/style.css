@@ -22,6 +22,7 @@ a:hover {
 .btn-primary {
   border: white;
   transition: all 0.5s ease;
+  width: 49%;
 }
 
 .btn-primary:hover {
@@ -40,7 +41,7 @@ hr:last-child {
 
 .jumbotron,
 .card {
-  -webkit-animation-duration: 1s;
-  -moz-animation-duration: 1s;
-  animation-duration: 1s;
+  -webkit-animation-duration: 1.5s;
+  -moz-animation-duration: 1.5s;
+  animation-duration: 1.5s;
 }
