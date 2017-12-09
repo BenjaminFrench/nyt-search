@@ -15,4 +15,11 @@ body {
 
 .btn-primary {
   border: white;
+  transition: all 0.5s ease;
+}
+
+.btn-primary:hover {
+  cursor: pointer;
+  background: mediumvioletred;
+  opacity: 0.8;
 }
