@@ -1,2 +1,2 @@
 # nyt-search
-Example using (https://developer.nytimes.com/article_search_v2.json)[NYT article search api]
+Example using [NYT article search api](https://developer.nytimes.com/article_search_v2.json)
