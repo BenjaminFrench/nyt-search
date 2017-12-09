@@ -6,6 +6,15 @@ $('#searchBtn').on('click', function (event) {
     var numResults = $('#numberRecords').val();
     var startDate = $('#startYear').val();
     var endDate = $('#endYear').val();
+
+    if (startDate === '') {
+        startDate = '1900';
+    }
+    if (endDate === '') {
+        endDate = '2017';
+    }
+    startDate += '0101';
+    endDate += '1231';
     
     var url = "https://api.nytimes.com/svc/search/v2/articlesearch.json";
     url += '?' + $.param({
@@ -25,7 +34,7 @@ $('#searchBtn').on('click', function (event) {
             $('#queryResults').append(`
             <div class="card">
                 <div class="body">
-                    <h3 class="headline"><a href="${response.docs[index].web_url}"> Article number: ${index+1} ${response.docs[index].headline.main}</a></h3>
+                    <h3 class="headline"><a href="${response.docs[index].web_url}">${index+1}. ${response.docs[index].headline.main}</a></h3>
                     <h5 class="author">${response.docs[index].byline.original}</h5>
                 </div>
             </div>
