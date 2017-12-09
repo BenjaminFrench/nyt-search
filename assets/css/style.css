@@ -2,6 +2,11 @@ body {
   font-family: "Barlow Semi Condensed", sans-serif;
 }
 
+a,
+a:hover {
+  text-decoration: none;
+}
+
 .jumbotron,
 .btn-primary {
   background: mediumvioletred;
@@ -22,4 +27,12 @@ body {
   cursor: pointer;
   background: mediumvioletred;
   opacity: 0.8;
+}
+
+#queryResults .card {
+  border: none;
+}
+
+hr:last-child {
+  display: none;
 }
